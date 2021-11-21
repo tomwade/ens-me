@@ -1,0 +1,214 @@
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	opacity: 1;
+	z-index: 99;
+
+	background: rgb(247, 247, 247);
+	transition: all .36s;
+}
+
+.loader.loaded {
+	opacity: 0;
+	z-index: 0;
+}
+
+.loader img {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+	color: rgb(22, 22, 22);
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+	margin: 48px 0 24px;
+	text-align: center;
+}
+
+.avatar {
+	background-color: #fff;
+	display: block;
+	margin: 0 auto;
+    box-shadow: rgb(200 200 200) 0px 0px 0px 1px;
+    border: solid 8px white;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    margin-top: -225px;
+    position: relative;
+    z-index: 30;
+    overflow: hidden;
+}
+
+.avatar img {
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+	width: 100%;
+}
+
+.content {
+	background-color: rgb(247, 247, 247);
+	border-top: 1px solid rgb(227, 227, 227);
+	padding: 24px 0 72px;
+
+	clear: both;
+	display: block;
+	position: relative;
+
+	margin: 120px 0 0 0;
+	padding-top: 140px;
+
+	min-height: 90vh;
+}
+
+.domains {
+
+}
+
+.domain {
+	border-left: none;
+	display: block;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(170 170 170) 0px 0px 0px 1px inset;
+    border-radius: 6px;
+    padding: 24px;
+    margin: 30px auto 0;
+    text-decoration: none;
+    max-width: 600px;
+
+    position: relative;
+    z-index: 30;
+}
+
+.domain__name {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.domain__expires {
+	color: rgb(150 150 150);
+	font-size: 16px;
+	font-weight: 700;
+	margin-left: 12px;
+}
+
+.domain__actions {
+	float: right;
+	margin: 6px -18px 0 0;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    border: solid 2px rgb(4, 155, 74);
+    border-radius: 4px;
+    color: rgb(4, 155, 74);
+    padding: 8px 12px;
+    margin-right: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.domain__actions .btn:hover {
+	text-decoration: underline;
+}
+
+.domain__actions input[type="color"] {
+	background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    color: rgb(4, 155, 74);
+    margin: -8px 12px 0 0;
+    width: 64px;
+	height: 32px;
+}
+
+.btn-edit {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.ens {
+	display: none;
+}
+
+.editable {
+	display: none;
+
+	position: relative;
+	z-index: 40;
+}
+
+.editing {
+
+}
+
+.editing .editable {
+	cursor: pointer;
+	display: block !important;
+}
+
+.editing .domain {
+	display: block;
+}
+
+.editing:before {
+	content: '';
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 20;
+}
+
+.domain__toggle {
+	position: absolute;
+    left: -50px;
+    height: 24px;
+    width: 24px;
+}
+
+.avatar__wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 166px;
+}
+
+.avatar__wrapper .domain__toggle {
+	bottom: 8px;
+	left: initial;
+	right: 8px;
+}
+
+.domain__save {
+    background-color: rgb(4, 155, 74);
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.hidden {
+	display: none !important;
+}

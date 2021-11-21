@@ -1,0 +1,66 @@
+/*!
+Theme Name: Leedo
+Theme URI: https://wp.vlthemes.com/leedo/
+Author: VLThemes
+Author URI: https://themeforest.net/user/vlthemes
+Description: Leedo is a carefully crafted flexible, powerful and high performance portfolio WordPress Theme for personal and corporate use. We designed it by focusing on functionality and ease of use for both sides: the Visitor and the WordPress Admin.
+Version: 1.4.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: leedo
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	font-family: 'Arial' , sans-serif;
+	font-size: 14px;
+	color: #757575;
+}
+
+/* WordPress API Elements */
+
+.wp-caption {
+	margin: 30px 0;
+	font-size: 16px;
+	text-align: center;
+	font-style: italic;
+	max-width: 100%;
+}
+
+.wp-caption p,
+.wp-caption-text {
+	margin: 0;
+	margin-top: 5px;
+}
+
+.wp-caption-text,
+.sticky,
+.gallery-caption,
+.bypostauthor,
+.screen-reader-text {
+	visibility: visible;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+.aligncenter {
+	margin: 30px auto;
+	display: block;
+}
+
+.alignright {
+	margin: 10px 0 10px 30px;
+	float: right;
+}
+
+.alignleft {
+	margin: 10px 30px 10px 0;
+	float: left;
+}
